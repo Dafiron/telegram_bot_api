@@ -371,7 +371,7 @@ si no se encontrase habia una inconsistencia en el almacenaje de los datos lo qu
 
 - Se consultan los pagos reaizados por el cliente para cada uno de los pedidos; se esta en condiciones de emitir un mensaje con la informacion solicitada por el cliente.
 
-    ```r
+    ```
 
                         |---------------------------------------------------------------------------------|
                         |Para el cliente con id: {id cliente} con direccion en: {direccion proporcianada} |
@@ -386,6 +386,7 @@ si no se encontrase habia una inconsistencia en el almacenaje de los datos lo qu
     |Pagos registrados:                                |               |No se encontraron pagos realizados                  |
     |fecha: {fecha del pago} monto: {cantidad pagada}  |               |----------------------------------------------------|
     |--------------------------------------------------|               
+
 
 El mensaje se extendera en funcion de la cantaidad de pedidos y el estado del mismo.
 
@@ -533,7 +534,9 @@ curl https://api.telegram.org/bot<TELEGRAM_TOKEN>/getUpdates
 - Reemplaza <TELEGRAM_TOKEN> con el token de tu bot (el que obtuviste de BotFather).
 
 retornando algo similar a esto:
-    ```r
+
+    ```
+    
     {
         "ok": true,
         "result": [
@@ -573,7 +576,9 @@ Comando de path para ignorar mensajes problemáticos:
 
 ##### EJEMPLO:
 Supongamos que recibes el siguiente JSON al ejecutar getUpdates:
-    ```r
+
+    ```
+
     {
         "ok": true,
         "result": [
@@ -1094,7 +1099,8 @@ curl https://api.telegram.org/bot<TELEGRAM_TOKEN>/getUpdates
 - Replace <TELEGRAM_TOKEN> with your bot's token (the one you obtained from BotFather).
 
 returning something like this:
-    ```r
+    ```
+
     {
         "ok": true,
         "result": [
@@ -1133,7 +1139,8 @@ curl -X POST https://api.telegram.org/bot<TELEGRAM_TOKEN>/getUpdates -d '{"offse
 
 ##### EXAMPLE:
 Suppose you receive the following JSON when running getUpdates:
-    ```r
+    ```
+
     {
         "ok": true,
         "result": [
