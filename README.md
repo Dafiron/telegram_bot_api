@@ -217,15 +217,15 @@ Todos los errores tambien dan 200 OK, y se mustra por print(), para evitar el bu
 
 Se ejecuta una apertura con un saludo elegido al azar de entre 4 posibles de saludos, simandole las opcciones de navegacion para el usuario:
 
-|---------------------------------------------------|
-|{posibilidad de saludos}                           |
-|Te dejo la siguientes opcciones para que explores: |
-|1. Lista de productos                              |
-|2. Hacer un pedido                                 |
-|3. Consultar mis pedidos adeudados                 |
-|4. Reclamos                                        |
-|5. Nesecito comunicarme con un representante       |
-|---------------------------------------------------|
+
+>{posibilidad de saludos}                           
+>Te dejo la siguientes opcciones para que explores: 
+>1. Lista de productos                              
+>2. Hacer un pedido                                 
+>3. Consultar mis pedidos adeudados                 
+>4. Reclamos                                        
+>5. Nesecito comunicarme con un representante       
+
 
 Cambiando el estado a su condicion 2 (progress)
 
@@ -241,10 +241,9 @@ Se capturan todos los productos desde la base de datos y se comparan con los dat
 - El archivo PDF se sube al servicio de almacenamiento en la nube AWS S3.
 - Se envía el siguiente mensaje al usuario:
 
-|----------------------------------------------------------|
-|Descarga el archivo PDF aquí:                             |
-|https://{Region}.amazonaws.com/{Bucket-Name}/productos.pdf|
-|----------------------------------------------------------|
+
+>Descarga el archivo PDF aquí:                             
+>https://{Region}.amazonaws.com/{Bucket-Name}/productos.pdf
 
 Finalmente, el estado del usuario cambia a **1 (start)**.
 
@@ -257,14 +256,14 @@ Puedes descargar un ejemplo del archivo PDF generado haciendo clic en el siguien
 
 Se envia un error por incapasidad actual de resolver la consulta, temporalmente:
 
-|---------------------------------------------------------------|
-|Upss! Actualmente no estamos reciviendo pedidos por este medio,|
-|Por Favor comuniquese                                          |
-|Al: +59 9 223 X XXXXXX                                         |
-|De Lun a Vie de 09:00 hs a 17:00 hs                            |
-|y podremos resolver su pedido                                  |
-|Si nuevamente nesecitas infromacion aqui estare.               |
-|---------------------------------------------------------------|
+
+>Upss! Actualmente no estamos reciviendo pedidos por este medio,
+>Por Favor comuniquese                                          
+>Al: +59 9 223 X XXXXXX                                         
+>De Lun a Vie de 09:00 hs a 17:00 hs                            
+>y podremos resolver su pedido                                  
+>Si nuevamente nesecitas infromacion aqui estare.               
+
 
 Se mantiene el estado en su posicion 2 (progress)
 
@@ -272,14 +271,14 @@ Se mantiene el estado en su posicion 2 (progress)
 
 Se envia un mensaje solicitando datos para proseguir con la consulta:
 
-|-------------------------------------------------------------------------------------------------------------|
-|Para la consulta de pedidos adeudados nesecitamos tu direccion valida(de la siguiente forma: calle altura).  |
-|Por Favor comuniquese                                                                                        |
-|Al: +59 9 223 X XXXXXX                                                                                       |
-|De Lun a Vie de 09:00 hs a 17:00 hs                                                                          |
-|y podremos resolver su pedido                                                                                |
-|Si nuevamente nesecitas infromacion aqui estare.                                                             |
-|-------------------------------------------------------------------------------------------------------------|
+
+>Para la consulta de pedidos adeudados nesecitamos tu direccion valida(de la siguiente forma: calle altura).  
+>Por Favor comuniquese                                                                                        
+>Al: +59 9 223 X XXXXXX                                                                                       
+>De Lun a Vie de 09:00 hs a 17:00 hs                                                                          
+>y podremos resolver su pedido                                                                                
+>Si nuevamente nesecitas infromacion aqui estare.                                                             
+
 
 Cambiando el estado a 3 (orders)
 
@@ -288,14 +287,14 @@ Cambiando el estado a 3 (orders)
 
 Se envia un mensaje:
 
-|-------------------------------------------------------------------------------------------------------------|
-|Desde esta unidad automatica solo podemos orientarlo en los Reclamos.                                        |
-|Estas se realizan por los siguientes medios: Telefono o Whatsapp.                                            |
-|Al: +59 9 223 X XXXXXX                                                                                       |
-|De Lun a Vie de 09:00 hs a 17:00 hs                                                                          |
-|Recuerde tener a mano los remitos (de preferencia en formato digital) asi como informacion personal.         |
-|Si nuevamente nesecitas infromacion aqui estare.                                                             |
-|-------------------------------------------------------------------------------------------------------------|
+
+>Desde esta unidad automatica solo podemos orientarlo en los Reclamos.                                        
+>Estas se realizan por los siguientes medios: Telefono o Whatsapp.                                            
+>Al: +59 9 223 X XXXXXX                                                                                       
+>De Lun a Vie de 09:00 hs a 17:00 hs                                                                          
+>Recuerde tener a mano los remitos (de preferencia en formato digital) asi como informacion personal.         
+>Si nuevamente nesecitas infromacion aqui estare.                                                             
+
 
 
 Cambiando el estado del usuario a 1 (start)
@@ -305,13 +304,13 @@ Cambiando el estado del usuario a 1 (start)
 
 Mensaje de respuesta:
 
-|-------------------------------------------------------------------------------------------------------------|
-|Desde esta unidad no podemos redireccionar su solicitud de forma automatica.                                 |
-|Estas se realizan por los siguientes medios: Telefono o Whatsapp.                                            |
-|Al: +59 9 223 X XXXXXX                                                                                       |
-|De Lun a Vie de 09:00 hs a 17:00 hs                                                                          |
-|Si nuevamente nesecitas infromacion aqui estare.                                                             |
-|-------------------------------------------------------------------------------------------------------------|
+
+>Desde esta unidad no podemos redireccionar su solicitud de forma automatica.                                  
+>Estas se realizan por los siguientes medios: Telefono o Whatsapp.                                            
+>Al: +59 9 223 X XXXXXX                                                                                       
+>De Lun a Vie de 09:00 hs a 17:00 hs                                                                          
+>Si nuevamente nesecitas infromacion aqui estare.                                                             
+
 
 Cambiando el estado del usuario a 1 (start)
 
@@ -321,9 +320,9 @@ Ante la incapasidad de lectura del mensaje ya sea por no contener textos, o no s
 
 Enviando:
 
-|--------------------------------------------------|
-|Por favor, envía un mensaje con un valor valido.  |
-|--------------------------------------------------|
+
+>Por favor, envía un mensaje con un valor valido.  |
+
 
 Manteniendo el estado.
 
@@ -333,45 +332,46 @@ Manteniendo el estado.
 
 ante la incapasidad de individualizarlo envia el mensaje (cambiando su estado a 1 (start)):
 
-|---------------------------------------------------------------------------------------------------------------------------|
-|Se encontraron múltiples clientes con la misma dirección. Por favor, contacta a un representante para resolver este caso.  |
-|Al: +59 9 223 X XXXXXX                                                                                                     |
-|De Lun a Vie de 09:00 hs a 17:00 hs                                                                                        |
-|---------------------------------------------------------------------------------------------------------------------------|
+
+>Se encontraron múltiples clientes con la misma dirección. Por favor, contacta a un representante para resolver este caso.  
+>Al: +59 9 223 X XXXXXX                                                                                                     
+>De Lun a Vie de 09:00 hs a 17:00 hs                                                                                        
+
 
 
 Si no se obtuvo resultado en la consualta a base de datos ( manteniendo estado ):
 
-|---------------------------------------------------------------------------------------------------------------------------|
-|No hemos podido relacionar la direccion provista con un cliente activo.                                                    |
-|Intenta nuevamente, con todos los caracteres en minuscula, sin espacios previos.                                           |
-|De la siguiente forma: calle altura                                                                                        |
-|Si continuas con incombenientes comunicate via whatsapp al +54 9 223 X XXXXXX                                              |
-|---------------------------------------------------------------------------------------------------------------------------|
+
+>No hemos podido relacionar la direccion provista con un cliente activo.                                                    
+>Intenta nuevamente, con todos los caracteres en minuscula, sin espacios previos.                                           
+>De la siguiente forma: calle altura                                                                                        
+>Si continuas con incombenientes comunicate via whatsapp al +54 9 223 X XXXXXX                                              
+
 
 
 - Se prosede a consultar por los pedidos que no esten retulados como pago *consultar tabla: pedidos.
 
 De no encontrarse pedidos adeudados se retorna el siguiente mesnaje (retornando al estado 1 (start)):
 
-|--------------------------------------------------------------------------------------|
-|No hemos podido encontrar los pedidos adeudados,                                      |
-|Si crees que se trata de un error comuniquese via whatsapp al +54 9 223 X XXXXXX,     |
-|Nuestros representantes le podran asistir en su inquietud                             |
-|--------------------------------------------------------------------------------------|
+
+>No hemos podido encontrar los pedidos adeudados,                                      
+>Si crees que se trata de un error comuniquese via whatsapp al +54 9 223 X XXXXXX,     
+>Nuestros representantes le podran asistir en su inquietud                             
+
 
 - Luego se solicitan los a traves de vincular los pedidos a la hoja de trabajo que fue asignada para poder particularizar la fecha en que se realizo cada uno de los pedidos.
 
 si no se encontrase habia una inconsistencia en el almacenaje de los datos lo que llevaria a contestar el siguiente mensaje (cambiando el estado a 1 (start)):
 
-|--------------------------------------------------------------|
-|Ocurrio un error en la carga de datos                         |
-|Por Favor comuniquese via whatsapp al +54 9 223 X XXXXXX,     |
-|Nuestros representantes le podran asistir                     |
-|--------------------------------------------------------------|
+
+>Ocurrio un error en la carga de datos                         
+>Por Favor comuniquese via whatsapp al +54 9 223 X XXXXXX,     
+>Nuestros representantes le podran asistir                     
+
 
 - Se consultan los pagos reaizados por el cliente para cada uno de los pedidos; se esta en condiciones de emitir un mensaje con la informacion solicitada por el cliente.
 
+    ```
 
                         |---------------------------------------------------------------------------------|
                         |Para el cliente con id: {id cliente} con direccion en: {direccion proporcianada} |
@@ -380,20 +380,20 @@ si no se encontrase habia una inconsistencia en el almacenaje de los datos lo qu
 
                         +                                  o                         +
 
-|--------------------------------------------------|               |----------------------------------------------------|
-|Pedido entregado el : {fecha del primer pedido}   |               |Pedido entregado el : {fecha del primer pedido}     |
-|Total: {valor total del pedido}                   |               |Total: {valor total del pedido}                     |
-|Pagos registrados:                                |               |No se encontraron pagos realizados                  |
-|fecha: {fecha del pago} monto: {cantidad pagada}  |               |----------------------------------------------------|
-|--------------------------------------------------|               
+    |--------------------------------------------------|               |----------------------------------------------------|
+    |Pedido entregado el : {fecha del primer pedido}   |               |Pedido entregado el : {fecha del primer pedido}     |
+    |Total: {valor total del pedido}                   |               |Total: {valor total del pedido}                     |
+    |Pagos registrados:                                |               |No se encontraron pagos realizados                  |
+    |fecha: {fecha del pago} monto: {cantidad pagada}  |               |----------------------------------------------------|
+    |--------------------------------------------------|               
 
 El mensaje se extendera en funcion de la cantaidad de pedidos y el estado del mismo.
 
 Ante un error inesperado en el proseso final envia menaje:
 
-|-------------------------------------------------------------------------------------|
-|Ocurrió un error al procesar tu solicitud. Por favor, intenta nuevamente más tarde.  |
-|-------------------------------------------------------------------------------------|
+
+>Ocurrió un error al procesar tu solicitud. Por favor, intenta nuevamente más tarde.  
+
 
 ### debts
 
@@ -533,33 +533,33 @@ curl https://api.telegram.org/bot<TELEGRAM_TOKEN>/getUpdates
 - Reemplaza <TELEGRAM_TOKEN> con el token de tu bot (el que obtuviste de BotFather).
 
 retornando algo similar a esto:
-
-{
-    "ok": true,
-    "result": [
-        {
-            "update_id": 123456789,
-            "message": {
-                "message_id": 1,
-                "from": {
-                    "id": 987654321,
-                    "is_bot": false,
-                    "first_name": "Usuario",
-                    "username": "usuario_prueba",
-                    "language_code": "es"
-                },
-                "chat": {
-                    "id": 987654321,
-                    "first_name": "Usuario",
-                    "username": "usuario_prueba",
-                    "type": "private"
-                },
-                "date": 1698765432,
-                "text": "Hola, soy un mensaje pendiente."
+´´
+    {
+        "ok": true,
+        "result": [
+            {
+                "update_id": 123456789,
+                "message": {
+                    "message_id": 1,
+                    "from": {
+                        "id": 987654321,
+                        "is_bot": false,
+                        "first_name": "Usuario",
+                        "username": "usuario_prueba",
+                        "language_code": "es"
+                    },
+                    "chat": {
+                        "id": 987654321,
+                        "first_name": "Usuario",
+                        "username": "usuario_prueba",
+                        "type": "private"
+                    },
+                    "date": 1698765432,
+                    "text": "Hola, soy un mensaje pendiente."
+                }
             }
-        }
-    ]
-}
+        ]
+    }
 
 Comando de path para ignorar mensajes problemáticos:
 
@@ -573,31 +573,32 @@ Comando de path para ignorar mensajes problemáticos:
 
 ##### EJEMPLO:
 Supongamos que recibes el siguiente JSON al ejecutar getUpdates:
-{
-    "ok": true,
-    "result": [
-        {
-            "update_id": 123456789,
-            "message": {
-                "message_id": 1,
-                "from": { ... },
-                "chat": { ... },
-                "date": 1698765432,
-                "text": "Mensaje duplicado"
+´´
+    {
+        "ok": true,
+        "result": [
+            {
+                "update_id": 123456789,
+                "message": {
+                    "message_id": 1,
+                    "from": { ... },
+                    "chat": { ... },
+                    "date": 1698765432,
+                    "text": "Mensaje duplicado"
+                }
+            },
+            {
+                "update_id": 123456790,
+                "message": {
+                    "message_id": 2,
+                    "from": { ... },
+                    "chat": { ... },
+                    "date": 1698765433,
+                    "text": "Otro mensaje duplicado"
+                }
             }
-        },
-        {
-            "update_id": 123456790,
-            "message": {
-                "message_id": 2,
-                "from": { ... },
-                "chat": { ... },
-                "date": 1698765433,
-                "text": "Otro mensaje duplicado"
-            }
-        }
-    ]
-}
+        ]
+    }
 
 Para ignorar estos mensajes duplicados, usa el siguiente comando:
 
@@ -763,15 +764,16 @@ All errors also return 200 OK and are displayed via print() to avoid the infinit
 
 An opening is executed with a greeting randomly chosen from 4 possible greetings, providing the user with navigation options:
 
-|------------------------------------------------------|
-|{possible greetings}                                  |
-| I'll leave the following options for you to explore: |
-|1. Product list                                       |
-|2. Place an order                                     |
-|3. Check my outstanding orders                        |
-|4. Claims                                             |
-|5. I need to contact a representative                 |
-|------------------------------------------------------|
+
+
+>{possible greetings}                                  
+> I'll leave the following options for you to explore: 
+>1. Product list                                       
+>2. Place an order                                     
+>3. Check my outstanding orders                        
+>4. Claims                                             
+>5. I need to contact a representative                 
+
 
 (Guideline translation)
 
@@ -789,10 +791,10 @@ All products are captured from the database and compared with the data previousl
 - The PDF file is uploaded to the AWS S3 cloud storage service.
 - The following message is sent to the user:
 
-|----------------------------------------------------------|
-|Download the PDF file here:                               |
-|https://{Region}.amazonaws.com/{Bucket-Name}/products.pdf |
-|----------------------------------------------------------|
+
+>Download the PDF file here:                               
+>https://{Region}.amazonaws.com/{Bucket-Name}/products.pdf 
+
 
 Finally, the user's status changes to **1 (start)**.
 
@@ -805,14 +807,14 @@ You can download an example of the generated PDF file by clicking the following 
 
 An error has been sent due to the current inability to resolve the query, temporarily:
 
-|------------------------------------------------------------------|
-|Oops! We are currently not accepting orders through this channel. |
-|Please contact us                                                 |
-|At: +59 9 223 X XXXXXX                                            |
-|Mon to Fri from 9:00 AM to 5:00 PM                                |
-|and we can resolve your request                                   |
-|If you need information again, I'll be here.                      |
-|------------------------------------------------------------------|
+
+>Oops! We are currently not accepting orders through this channel. 
+>Please contact us                                                 
+>At: +59 9 223 X XXXXXX                                            
+>Mon to Fri from 9:00 AM to 5:00 PM                                
+>and we can resolve your request                                   
+>If you need information again, I'll be here.                      
+
 
 (Guideline translation)
 
@@ -822,14 +824,13 @@ The status remains at position 2 (progress)
 
 A message is sent requesting information to continue with the query:
 
-|-----------------------------------------------------------------------------------------------|
-|To inquire about outstanding orders, we need your valid address (as follows: street address).  |
-|Please contact us                                                                              |
-|At: +59 9 223 X XXXXXX                                                                         |
-|Mon to Fri from 9:00 AM to 5:00 PM                                                             |
-|and we can resolve your request                                                                |
-|If you need more information, I'll be here.                                                    |
-|-----------------------------------------------------------------------------------------------|
+
+>To inquire about outstanding orders, we need your valid address (as follows: street address).  
+>Please contact us                                                                              
+>At: +59 9 223 X XXXXXX                                                                         
+>Mon to Fri from 9:00 AM to 5:00 PM                                                             
+>and we can resolve your request                                                                
+>If you need more information, I'll be here.                                                    
 
 (Guideline translation)
 
@@ -839,14 +840,14 @@ Changing the status to 3 (orders)
 
 A message is sent:
 
-|---------------------------------------------------------------------------------------------------------------|
-|From this automated unit, we can only assist you with claims.                                                  |
-|These can be made by the following means: Phone or WhatsApp.                                                   |
-|At: +59 9 223 X XXXXXX                                                                                         |
-|Mon to Fri from 9:00 AM to 5:00 PM                                                                             |
-|Remember to have your shipping receipts (preferably in digital format) as well as personal information on hand.|
-|If you need information again, I'll be here.                                                                   |
-|---------------------------------------------------------------------------------------------------------------|
+
+>From this automated unit, we can only assist you with claims.                                                  
+>These can be made by the following means: Phone or WhatsApp.                                                   
+>At: +59 9 223 X XXXXXX                                                                                         
+>Mon to Fri from 9:00 AM to 5:00 PM                                                                             
+>Remember to have your shipping receipts (preferably in digital format) as well as personal information on hand.
+>If you need information again, I'll be here.                                                                   
+
 
 (Guideline translation)
 
@@ -856,13 +857,13 @@ Changing user status to 1 (start)
 
 Reply message:
 
-|------------------------------------------------------------------------------------------------------------|
-|We cannot automatically redirect your request from this unit.                                               |
-|These can be done by the following means: Phone or WhatsApp.                                                |
-|To: +59 9 223 X XXXXXX                                                                                      |
-|Mon to Fri from 9:00 AM to 5:00 PM                                                                          |
-|If you need information again, I'll be here.                                                                |
-|------------------------------------------------------------------------------------------------------------|
+
+>We cannot automatically redirect your request from this unit.                                               
+>These can be done by the following means: Phone or WhatsApp.                                                
+>To: +59 9 223 X XXXXXX                                                                                      
+>Mon to Fri from 9:00 AM to 5:00 PM                                                                          
+>If you need information again, I'll be here.                                                                
+
 
 (Guideline translation)
 
@@ -874,9 +875,9 @@ If the message cannot be read, either because it contains no text or because the
 
 Sending:
 
-|--------------------------------------------|
-|Please send a message with a valid value.   |
-|--------------------------------------------|
+
+>Please send a message with a valid value.   
+
 
 (Guideline translation)
 
@@ -889,22 +890,22 @@ Maintaining status.
 
 If the customer cannot be identified, send the following message (changing its status to 1 (start)):
 
-|-------------------------------------------------------------------------------------------------------------|
-|Multiple customers were found with the same address. Please contact a representative to resolve this case.   |
-|At: +59 9 223 X XXXXXX                                                                                       |
-|Mon to Fri from 9:00 AM to 5:00 PM                                                                           |
-|-------------------------------------------------------------------------------------------------------------|
+
+>Multiple customers were found with the same address. Please contact a representative to resolve this case.   
+>At: +59 9 223 X XXXXXX                                                                                       
+>Mon to Fri from 9:00 AM to 5:00 PM                                                                           
+
 
 (Guideline translation)
 
 If the database query did not return a result (maintaining status):
 
-|---------------------------------------------------------------------------------------|
-|We were unable to match the address provided with an active customer.                  |
-|Please try again, using all lowercase characters and no spaces.                        |
-|As follows: street height                                                              |
-|If you continue to have problems, please contact us via WhatsApp at +54 9 223 X XXXXXX |
-|---------------------------------------------------------------------------------------|
+
+>We were unable to match the address provided with an active customer.                  
+>Please try again, using all lowercase characters and no spaces.                        
+>As follows: street height                                                              
+>If you continue to have problems, please contact us via WhatsApp at +54 9 223 X XXXXXX 
+
 
 (Guideline translation)
 
@@ -912,11 +913,11 @@ If the database query did not return a result (maintaining status):
 
 If no outstanding orders are found, the following message will be returned (returning to status 1 (start)):
 
-|---------------------------------------------------------------------------------------|
-|We were unable to find the outstanding orders,                                         |
-|If you believe this is an error, please contact us via WhatsApp at +54 9 223 X XXXXXX, |
-|Our representatives can assist you with your concern                                   |
-|---------------------------------------------------------------------------------------|
+
+>We were unable to find the outstanding orders,                                         
+>If you believe this is an error, please contact us via WhatsApp at +54 9 223 X XXXXXX, 
+>Our representatives can assist you with your concern                                   
+
 
 (Guideline translation)
 
@@ -924,16 +925,17 @@ If no outstanding orders are found, the following message will be returned (retu
 
 If it is not found, there is an inconsistency in the data storage, which would lead to the following message (changing the status to 1 (start)):
 
-|---------------------------------------------------------------|
-|An error occurred while loading data                           |
-|Please contact us via WhatsApp at +54 9 223 X XXXXXX,          |
-|Our representatives can assist you                             |
-|---------------------------------------------------------------|
+
+>An error occurred while loading data                           
+>Please contact us via WhatsApp at +54 9 223 X XXXXXX,          
+>Our representatives can assist you                             
+
 
 (Guideline translation)
 
 - Payments made by the customer for each order are reviewed; a message can be sent with the information requested by the customer.
 
+    ```
 
                                 |-------------------------------------------------------------------------|
                                 |For customer with ID: {customer id} with address at: {address provided}  |
@@ -942,12 +944,13 @@ If it is not found, there is an inconsistency in the data storage, which would l
 
                     +                                              or                                           +
 
-|----------------------------------------------|                                        |------------------------------------------|
-|Order delivered on: {date of first order}     |                                        |Order delivered on: {date of first order} |
-|Total: {total order value}                    |                                        |Total: {total order value}                |
-|Payments recorded:                            |                                        |No payments found                         |
-|Date: {payment date} Amount: {amount paid}    |                                        |------------------------------------------|
-|----------------------------------------------|
+
+    |----------------------------------------------|                                        |------------------------------------------|
+    |Order delivered on: {date of first order}     |                                        |Order delivered on: {date of first order} |
+    |Total: {total order value}                    |                                        |Total: {total order value}                |
+    |Payments recorded:                            |                                        |No payments found                         |
+    |Date: {payment date} Amount: {amount paid}    |                                        |------------------------------------------|
+    |----------------------------------------------|
 
 (Guideline translation)
 
@@ -955,9 +958,9 @@ The message will be extended depending on the number of orders and their status.
 
 In the event of an unexpected error in the final process, please send a message:
 
-|-------------------------------------------------------------------------|
-|An error occurred while processing your request. Please try again later. |
-|-------------------------------------------------------------------------|
+
+>An error occurred while processing your request. Please try again later.
+
 
 (Guideline translation)
 
@@ -1091,33 +1094,33 @@ curl https://api.telegram.org/bot<TELEGRAM_TOKEN>/getUpdates
 - Replace <TELEGRAM_TOKEN> with your bot's token (the one you obtained from BotFather).
 
 returning something like this:
-
-{
-    "ok": true,
-    "result": [
-        {
-            "update_id": 123456789,
-            "message": {
-                "message_id": 1,
-                "from": {
-                    "id": 987654321,
-                    "is_bot": false,
-                    "first_name": "Usuario",
-                    "username": "usuario_prueba",
-                    "language_code": "es"
-                },
-                "chat": {
-                    "id": 987654321,
-                    "first_name": "Usuario",
-                    "username": "usuario_prueba",
-                    "type": "private"
-                },
-                "date": 1698765432,
-                "text": "Hola, soy un mensaje pendiente."
+    ```r
+    {
+        "ok": true,
+        "result": [
+            {
+                "update_id": 123456789,
+                "message": {
+                    "message_id": 1,
+                    "from": {
+                        "id": 987654321,
+                        "is_bot": false,
+                        "first_name": "Usuario",
+                        "username": "usuario_prueba",
+                        "language_code": "es"
+                    },
+                    "chat": {
+                        "id": 987654321,
+                        "first_name": "Usuario",
+                        "username": "usuario_prueba",
+                        "type": "private"
+                    },
+                    "date": 1698765432,
+                    "text": "Hola, soy un mensaje pendiente."
+                }
             }
-        }
-    ]
-}
+        ]
+    }
 
 Path command to ignore problematic messages:
 
@@ -1130,32 +1133,32 @@ curl -X POST https://api.telegram.org/bot<TELEGRAM_TOKEN>/getUpdates -d '{"offse
 
 ##### EXAMPLE:
 Suppose you receive the following JSON when running getUpdates:
-
-{
-    "ok": true,
-    "result": [
-        {
-            "update_id": 123456789,
-            "message": {
-                "message_id": 1,
-                "from": { ... },
-                "chat": { ... },
-                "date": 1698765432,
-                "text": "Mensaje duplicado"
+    ```r
+    {
+        "ok": true,
+        "result": [
+            {
+                "update_id": 123456789,
+                "message": {
+                    "message_id": 1,
+                    "from": { ... },
+                    "chat": { ... },
+                    "date": 1698765432,
+                    "text": "Mensaje duplicado"
+                }
+            },
+            {
+                "update_id": 123456790,
+                "message": {
+                    "message_id": 2,
+                    "from": { ... },
+                    "chat": { ... },
+                    "date": 1698765433,
+                    "text": "Otro mensaje duplicado"
+                }
             }
-        },
-        {
-            "update_id": 123456790,
-            "message": {
-                "message_id": 2,
-                "from": { ... },
-                "chat": { ... },
-                "date": 1698765433,
-                "text": "Otro mensaje duplicado"
-            }
-        }
-    ]
-}
+        ]
+    }
 
 To ignore these messages duplicates, use the following command:
 
