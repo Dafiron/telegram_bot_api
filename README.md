@@ -533,7 +533,7 @@ curl https://api.telegram.org/bot<TELEGRAM_TOKEN>/getUpdates
 - Reemplaza <TELEGRAM_TOKEN> con el token de tu bot (el que obtuviste de BotFather).
 
 retornando algo similar a esto:
-´´
+    ```
     {
         "ok": true,
         "result": [
@@ -573,7 +573,7 @@ Comando de path para ignorar mensajes problemáticos:
 
 ##### EJEMPLO:
 Supongamos que recibes el siguiente JSON al ejecutar getUpdates:
-´´
+    ```
     {
         "ok": true,
         "result": [
