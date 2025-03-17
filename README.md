@@ -371,7 +371,7 @@ si no se encontrase habia una inconsistencia en el almacenaje de los datos lo qu
 
 - Se consultan los pagos reaizados por el cliente para cada uno de los pedidos; se esta en condiciones de emitir un mensaje con la informacion solicitada por el cliente.
 
-    ```
+    ```r
 
                         |---------------------------------------------------------------------------------|
                         |Para el cliente con id: {id cliente} con direccion en: {direccion proporcianada} |
@@ -533,7 +533,7 @@ curl https://api.telegram.org/bot<TELEGRAM_TOKEN>/getUpdates
 - Reemplaza <TELEGRAM_TOKEN> con el token de tu bot (el que obtuviste de BotFather).
 
 retornando algo similar a esto:
-    ```
+    ```r
     {
         "ok": true,
         "result": [
@@ -573,7 +573,7 @@ Comando de path para ignorar mensajes problemáticos:
 
 ##### EJEMPLO:
 Supongamos que recibes el siguiente JSON al ejecutar getUpdates:
-    ```
+    ```r
     {
         "ok": true,
         "result": [
